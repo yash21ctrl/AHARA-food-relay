@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { useAppStore } from '../store';
 import { showToast } from '../lib/toast';
 import { InteractiveVideoHero } from '../components/InteractiveVideoHero';
-import { InteractiveScreenSandbox } from '../components/InteractiveScreenSandbox';
 import {
   HeartHandshake,
   Building,
@@ -72,12 +71,7 @@ export const PortalGateway: React.FC = () => {
         <InteractiveVideoHero />
       </section>
 
-      {/* 2. INTERACTIVE SCREEN PLAYGROUND FOR ALL FEATURES */}
-      <section className="space-y-4">
-        <InteractiveScreenSandbox />
-      </section>
-
-      {/* 3. TWO DEDICATED PORTAL ENTRY CARDS (DOUBLE-BEZEL ARCHITECTURE) */}
+      {/* TWO DEDICATED PORTAL ENTRY CARDS (DOUBLE-BEZEL ARCHITECTURE) */}
       <section className="space-y-8 pt-4">
         <div className="text-center space-y-2">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-[0.2em] bg-slate-100 text-slate-700 border border-slate-200">
